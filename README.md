@@ -1,7 +1,7 @@
-# Stephen Hawking Brain 🧠  
+# Stephen Hawking's Brain 🧠  
 **Building the First Open-Source Cognitive Swarm for Scientific Genius**
 
-Stephen Hawking Brain is a local-first, open-source swarm intelligence system designed to emulate the cognitive brilliance of Stephen Hawking. Powered by **Llama 4** and orchestrated through 7 specialized agents, this MVP project explores how distributed cognition can be recreated and run entirely on your own hardware.
+Stephen Hawking's Brain is a local-first, open-source swarm intelligence system designed to emulate the cognitive brilliance of Stephen Hawking. Powered by **Llama 4** and orchestrated through 7 specialized agents, this MVP project explores how distributed cognition can be recreated and run entirely on your own hardware.
 
 ### ✨ Key Highlights
 - Swarm Intelligence: Agents collaborate in real time to simulate Hawking’s reasoning patterns.  
