@@ -1,6 +1,3 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="[https://people.com/human-interest/professor-stephen-hawking-his-life-in-photos/]" />
-</div>
 
 # Run and deploy your AI Studio app
 
