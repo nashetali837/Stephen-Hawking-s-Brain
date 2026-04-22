@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Archives": {
+      "title": "Historical Records",
+      "description": "Storage for verified Stephen Hawking texts and research papers.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "publicationDate": { "type": "string", "format": "date-time" },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["title", "content"]
+    },
+    "CognitiveLog": {
+      "title": "Swarm Interaction Log",
+      "description": "Activity history of agent swarm reasoning rounds.",
+      "type": "object",
+      "properties": {
+        "query": { "type": "string" },
+        "rounds": { "type": "array" },
+        "consensus": { "type": "string" },
+        "confidence": { "type": "number" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "userId": { "type": "string" }
+      },
+      "required": ["query", "consensus"]
+    }
+  },
+  "firestore": {
+    "archives/{archiveId}": {
+      "schema": "Archives",
+      "description": "The permanent vector-referenced library."
+    },
+    "logs/{logId}": {
+      "schema": "CognitiveLog",
+      "description": "Ephemeral or permanent reasoning traces."
+    }
+  }
+}

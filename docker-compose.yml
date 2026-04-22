@@ -1,0 +1,20 @@
+services:
+  hawking-brain:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      - .:/app
+      - /app/node_modules
+    restart: always
+
+  # Optional Python Core (If users want to run the raw python engine alongside)
+  # cosmology-engine:
+  #   build: 
+  #     context: .
+  #     dockerfile: python_core/Dockerfile
+  #   ports:
+  #     - "8000:8000"
