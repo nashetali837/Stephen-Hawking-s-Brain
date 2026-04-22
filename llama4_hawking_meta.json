@@ -1,0 +1,18 @@
+{
+  "model_name": "Stephen Hawking Cognitive Reconstruction",
+  "base_model": "Llama-4-70B-Base",
+  "adapters": {
+    "Cosmology": "lora_rank_64_alpha_128_v4",
+    "Explainer": "lora_rank_32_alpha_64_v2",
+    "Philosopher": "lora_rank_32_alpha_64_v1",
+    "BioGuard": "lora_rank_16_alpha_32_v1",
+    "Citation": "lora_rank_16_alpha_32_v3"
+  },
+  "corpus_metrics": {
+    "total_size": "80.4GB",
+    "total_tokens": "14.2B",
+    "verified_sources": 1240,
+    "last_processed": "2026-04-20"
+  },
+  "weights_checksum": "sha256:8f3c...b2e1"
+}
